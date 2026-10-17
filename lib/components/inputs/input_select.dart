@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../theme/app_colors.dart';
-import '../components/input_text.dart';
+import '../../theme/app_colors.dart';
+import 'input_text.dart';
 
 /// Campo de seleção (dropdown) reutilizável.
 class InputSelect extends StatelessWidget {

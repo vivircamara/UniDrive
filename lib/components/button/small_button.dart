@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_colors.dart';
+import '../../theme/app_colors.dart';
 
 /// Botão principal (preenchido) ou secundário (contornado).
 class SmallButton extends StatelessWidget {
@@ -9,7 +9,10 @@ class SmallButton extends StatelessWidget {
   final bool outlined;
   final IconData? icon;
   final double height;
+  final double width;
   final double radius;
+  final double fontSize;
+  final EdgeInsetsGeometry? padding;
 
   const SmallButton({
     super.key,
@@ -18,7 +21,10 @@ class SmallButton extends StatelessWidget {
     this.outlined = false,
     this.icon,
     this.height = 48,
+    this.width = 144.5,
     this.radius = 8,
+    this.fontSize = 16,
+    this.padding,
   });
 
   @override
@@ -37,12 +43,14 @@ class SmallButton extends StatelessWidget {
 
     return SizedBox(
       height: height,
+      width: width,
       child: outlined
           ? OutlinedButton(
               onPressed: onPressed,
               style: OutlinedButton.styleFrom(
                 foregroundColor: AppColors.colorSecondary,
                 side: const BorderSide(color: AppColors.border),
+                padding: padding,
                 shape: shape,
               ),
               child: child,
@@ -52,6 +60,7 @@ class SmallButton extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.colorPrimary,
                 foregroundColor: Colors.white,
+                padding: padding,
                 elevation: 0,
                 shape: shape,
               ),

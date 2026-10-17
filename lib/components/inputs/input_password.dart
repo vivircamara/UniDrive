@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_colors.dart';
-import '../components/input_text.dart';
+import '../../theme/app_colors.dart';
+import 'input_text.dart';
 
 /// Campo de senha com botão para mostrar/ocultar (ícone de olho).
 class InputPassword extends StatefulWidget {

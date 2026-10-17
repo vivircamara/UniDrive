@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_colors.dart';
+import '../../theme/app_colors.dart';
 
 /// Campo arredondado usado em "Para onde?" / "De onde?".
 class InputSearchWhere extends StatelessWidget {

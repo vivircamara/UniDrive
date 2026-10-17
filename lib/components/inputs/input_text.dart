@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../theme/app_colors.dart';
+import '../../theme/app_colors.dart';
 
 /// Campo de texto genérico (e-mail, matrícula, texto livre).
 class InputText extends StatelessWidget {

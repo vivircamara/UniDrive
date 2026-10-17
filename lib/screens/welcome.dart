@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../components/primary_button.dart';
-import '../components/secondary_button.dart';
+import '../components/button/primary_button.dart';
+import '../components/button/secondary_button.dart';
 
 
 class Welcome extends StatelessWidget {
